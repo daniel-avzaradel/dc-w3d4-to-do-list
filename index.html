@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge: To-do List</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <div id="title">
+        <h1>TO-DO LIST</h1>
+        <p>Daniel Avzaradel</p>
+        </div>
+        <br>
+        <div class="container">
+            <div id="new-task">
+                <input type="text" placeholder="New Task"><i class="fas fa-plus fa-2x" id="newBtn"></i>
+            </div>
+            <p id="error" class="hidden">Error: Your input is empty.</p>
+
+            <div class="tasks">
+                <ul>
+                    <li><i class="fas fa-check-square fa-2x hidden"></i><span>Clean my room</span><i class="fas fa-times fa-1x remove"></i></li>
+                    <li><i class="fas fa-check-square fa-2x hidden"></i><span>Finish JavaScript Project</span><i class="fas fa-times fa-1x remove"></i></li>
+                    <li><i class="fas fa-check-square fa-2x hidden"></i><span>Wash the dishes</span><i class="fas fa-times fa-1x remove"></i></li>
+                    <li><i class="fas fa-check-square fa-2x hidden"></i><span>Study Piano</span><i class="fas fa-times fa-1x remove"></i></li>
+                    <li><i class="fas fa-check-square fa-2x hidden"></i><span>Buy groceries</span><i class="fas fa-times fa-1x remove"></i></li>
+                    <li><i class="fas fa-check-square fa-2x hidden"></i><span>Fix showerhead</span><i class="fas fa-times fa-1x remove"></i></li>
+                    <li><i class="fas fa-check-square fa-2x hidden"></i><span>Pay electric bill</span><i class="fas fa-times fa-1x remove"></i></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/2098968af1.js" crossorigin="anonymous"></script>
+</body>
+</html>

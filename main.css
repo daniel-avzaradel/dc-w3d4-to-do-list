@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#title {
+    padding: 10px;
+    color: white;
+}
+
+main {
+    position: absolute;
+    min-width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: salmon;
+}
+
+.container {
+    width: 600px;
+    height: 620px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#new-task {
+    background-color: #495366;
+    color: rgb(44, 47, 58);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+#new-task i {
+    transition: 0.1s ease-in-out;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+#new-task i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#new-task input {
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 90%;
+    outline: none;
+    border: none;
+}
+
+.tasks {
+    width: 100%;
+    height: auto;
+    background-color: #d3d3d3;
+    margin-top: 40px;
+    box-shadow: 0 0px 16px rgba(0,0,0,0.4);
+
+}
+.tasks ul li {
+    list-style: none;
+    padding: 4px 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.tasks ul li:hover {
+    color: white;
+
+}
+
+.tasks ul li span {
+    margin-left: 10px;
+}
+
+.remove {
+    margin-left: auto;
+    color: #333;
+    transition: 0.1s ease-in-out;
+    padding: 10px;
+}
+.remove:hover {
+    color: crimson;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.selected-box {
+    background-color: teal;
+    color: white;
+}
+
+.error {
+    color: salmon;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+
+@media screen and (min-width:426px) and (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:275px) and (max-width: 425px) {
+    main {
+        width: 90%;
+    }
+    .container {
+        width: 90%;
+    }
+}
