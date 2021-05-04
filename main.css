@@ -119,6 +119,10 @@ h1 {
     margin-top: 6px;
 }
 
+.blank {
+    position: absolute;
+    float: left;
+}
 
 @media screen and (min-width:426px) and (max-width: 768px) {
     main {
