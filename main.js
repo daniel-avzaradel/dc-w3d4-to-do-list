@@ -41,6 +41,9 @@ newBtn.addEventListener('click', () => {
     let icon = document.createElement('i')
     icon.classList.add('fas','fa-check-square','fa-2x','hidden')
 
+    let icon2 = document.createElement('i')
+    icon2.classList.add('far', 'fa-square', 'fa-2x', 'blank')
+
     let newSpan = document.createElement('span')
     newSpan.textContent = input.value;
 
@@ -58,6 +61,7 @@ newBtn.addEventListener('click', () => {
     })
 
     newLi.appendChild(icon);
+    newLi.appendChild(icon2);
     newLi.appendChild(newSpan);
     newLi.appendChild(newDelete);
     ul.insertBefore(newLi, ul.childNodes[0]);
